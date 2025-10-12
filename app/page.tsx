@@ -166,21 +166,21 @@ export default function Home() {
         <div className="text-stone-700 text-xs md:text-sm">
           <a 
             href="https://www.linkedin.com/in/elisa-mordenti/" 
-            className="hover:underline underline-offset-4 transition-all duration-200 hover:text-stone-600"
+            className="underline underline-offset-4 hover:underline-offset-2 transition-all duration-200 hover:text-stone-600"
           >
             LinkedIn
           </a>
           <span className="mx-1">,</span>
           <a 
             href="https://decorous-detail-9bd.notion.site/22a43f7d1816802e958ef8c47ca48272?v=22a43f7d1816811882aa000cbeb50c5e" 
-            className="hover:underline underline-offset-4 transition-all duration-200 hover:text-stone-600"
+            className="underline underline-offset-4 hover:underline-offset-2 transition-all duration-200 hover:text-stone-600"
           >
             Builders that Matter
           </a>
           <span className="mx-1">,</span>
           <a 
             href="mailto:elisamordenti1@gmail.com" 
-            className="hover:underline underline-offset-4 transition-all duration-200 hover:text-stone-600"
+            className="underline underline-offset-4 hover:underline-offset-2 transition-all duration-200 hover:text-stone-600"
           >
             Contact me
           </a>
