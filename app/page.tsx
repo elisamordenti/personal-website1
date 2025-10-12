@@ -172,7 +172,7 @@ export default function Home() {
           </a>
           <span className="mx-1">,</span>
           <a 
-            href="#" 
+            href="https://decorous-detail-9bd.notion.site/22a43f7d1816802e958ef8c47ca48272?v=22a43f7d1816811882aa000cbeb50c5e" 
             className="hover:underline underline-offset-4 transition-all duration-200 hover:text-stone-600"
           >
             Builders that Matter
