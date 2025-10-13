@@ -23,17 +23,24 @@ export default function Home() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    // Set canvas size - centered area
+    // Set canvas size - responsive on desktop, fixed on mobile
     const resizeCanvas = () => {
-      const containerWidth = canvas.parentElement?.clientWidth || 800;
-      const containerHeight = canvas.parentElement?.clientHeight || 600;
-      
-      // Create a larger canvas area for more harmonious appearance
-      const canvasWidth = Math.min(containerWidth * 0.85, 800);
-      const canvasHeight = Math.min(containerHeight * 0.9, 600);
-      
-      canvas.width = canvasWidth;
-      canvas.height = canvasHeight;
+      // Check if device is mobile or desktop
+      if (window.innerWidth > 768) {
+        // DESKTOP: Responsive canvas that adapts to screen size
+        const containerWidth = canvas.parentElement?.clientWidth || 800;
+        const containerHeight = canvas.parentElement?.clientHeight || 600;
+        
+        const canvasWidth = Math.min(containerWidth * 0.85, 800);
+        const canvasHeight = Math.min(containerHeight * 0.9, 600);
+        
+        canvas.width = canvasWidth;
+        canvas.height = canvasHeight;
+      } else {
+        // MOBILE: Fixed size to prevent clipping and resizing issues
+        canvas.width = 400;
+        canvas.height = 300;
+      }
     };
 
     resizeCanvas();
