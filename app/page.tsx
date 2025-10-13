@@ -158,19 +158,19 @@ export default function Home() {
       
       {/* Text Content - Bottom-left positioning, slightly higher */}
       <div className="absolute bottom-16 left-8 md:bottom-24 md:left-16 max-w-md">
-        <h1 className="text-xl md:text-2xl font-bold text-stone-800 mb-2 leading-tight">
+        <h1 className="text-xl md:text-2xl font-bold text-stone-800 mb-2 leading-tight" style={{ fontFamily: 'Sabon Next LT, serif' }}>
           Elisa Mordenti
         </h1>
         
-        <p className="text-sm md:text-base text-stone-700 mb-1 leading-tight">
+        <p className="text-sm md:text-base text-stone-700 mb-1 leading-tight" style={{ fontFamily: 'Sabon Next LT, serif' }}>
           Exploring technology applications in relevant sectors
         </p>
-        <p className="text-sm md:text-base text-stone-700 mb-4 leading-tight">
+        <p className="text-sm md:text-base text-stone-700 mb-4 leading-tight" style={{ fontFamily: 'Sabon Next LT, serif' }}>
           Love all related to investing
         </p>
 
         {/* Links with commas - smaller than subject lines */}
-        <div className="text-stone-700 text-xs md:text-sm">
+        <div className="text-stone-700 text-xs md:text-sm" style={{ fontFamily: 'Sabon Next LT, serif' }}>
           <a 
             href="https://www.linkedin.com/in/elisa-mordenti/" 
             className="underline underline-offset-4 hover:underline-offset-2 transition-all duration-200 hover:text-stone-600"
