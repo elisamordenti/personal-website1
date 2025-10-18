@@ -144,7 +144,7 @@ export default function Home() {
   }, []); // Empty dependency array - no more infinite loop!
 
   return (
-    <div className="min-h-screen bg-amber-50 relative">
+    <div className="min-h-screen relative" style={{ background: '#e6f3ff' }}>
       {/* Particle Field - Centered */}
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="relative">
