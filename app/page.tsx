@@ -72,7 +72,9 @@ export default function Home() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    const animate = () => {
+    // Small delay to ensure canvas is fully ready (fixes deployment issues)
+    const startAnimation = () => {
+      const animate = () => {
       // Clear canvas
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -131,12 +133,17 @@ export default function Home() {
         }
       }
 
-      animationRef.current = requestAnimationFrame(animate);
+        animationRef.current = requestAnimationFrame(animate);
+      };
+
+      animate();
     };
 
-    animate();
+    // Start animation with a small delay to ensure canvas is ready
+    const timeoutId = setTimeout(startAnimation, 100);
 
     return () => {
+      clearTimeout(timeoutId);
       if (animationRef.current) {
         cancelAnimationFrame(animationRef.current);
       }
